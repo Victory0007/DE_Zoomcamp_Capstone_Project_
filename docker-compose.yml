@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    container_name: premier_league_data_pgdb
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: Data_Professional
+      POSTGRES_PASSWORD: python
+      POSTGRES_DB: premier_league_db
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+volumes:
+  local_pgdata:
+  pgadmin-data:
