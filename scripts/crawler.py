@@ -23,7 +23,7 @@ class Crawler:
 
     def _setup_driver(self):
         """Setup WebDriver and navigate to the target URL."""
-        path = "../chromedriver-linux64/chromedriver"
+        path = "../Airflow/dags/chromedriver-linux64/chromedriver"
         service = Service(path)
         driver = webdriver.Chrome(service=service)
         driver.get(self.url)
@@ -131,31 +131,28 @@ class Crawler:
         dataframe = pd.DataFrame(data)
         return dataframe
 
-    def run(self):
-        """Run the entire scraping process."""
+    def run(self, start_game_week=1, end_game_week=38):  # Default to full season
+        """Run the scraping process for a given game week range."""
         try:
             self.accept_cookies()
             dropdown_xpath = self.open_dropdown()
             season_dataframe = []
 
-            for game_week in range(1, 3):  # Change this range for more game weeks
+            for game_week in range(start_game_week, end_game_week + 1):
                 self.select_gameweek(game_week)
                 table_data = self.get_table_data()
 
-                # Add game_week column
                 table_data["game_week"] = game_week
-
                 season_dataframe.append(table_data)
 
-                # Reopen dropdown for the next iteration
                 dropdown = self.wait.until(EC.presence_of_element_located((By.XPATH, dropdown_xpath)))
                 self.driver.execute_script("arguments[0].click();", dropdown)
                 time.sleep(1)
 
-            # Combine all smaller DataFrames into one
             final_dataframe = pd.concat(season_dataframe, ignore_index=True)
 
         finally:
             self.driver.quit()
         return final_dataframe
+
 

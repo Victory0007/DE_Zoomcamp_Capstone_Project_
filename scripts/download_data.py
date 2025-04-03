@@ -1,28 +1,31 @@
 import os
-from scripts.crawler import Crawler
-import pandas as pd
+import sys
+sys.path.append('/opt/airflow/dags/scripts')
 
-def download_data(season: str):
-    """
-    Downloads Premier League data for a given season and saves it as a CSV file.
+from crawler import Crawler
 
-    Args:
-        season (str): The season to download data for (e.g., "2023/24").
-    """
-    # Ensure the "Data" directory exists
-    data_dir = "../Data"
+
+def download_data(season: str, start_game_week=1, end_game_week=3):
+    """Downloads Premier League data for specific game weeks and saves it to CSV."""
+    data_dir = '../data'
+
     os.makedirs(data_dir, exist_ok=True)
 
-    # Format the season string for filenames
-    season_clean = season.replace("/", "_")  # Convert "2023/24" -> "2023_24"
+    season_clean = season.replace("/", "_")
 
-    # Initialize and run the Crawler
     crawler = Crawler(season)
-    df = crawler.run()
+    df = crawler.run(start_game_week, end_game_week)
     df["season"] = season
 
-    # Save the DataFrame as a CSV inside the "Data" folder
-    csv_filename = f"{data_dir}/{season_clean}_premier_league_season_data.csv"
-    df.to_csv(csv_filename, index=False)
+    for game_week in range(start_game_week, end_game_week + 1):
+        game_week_df = df[df["game_week"] == game_week]
+        csv_filename = f"{data_dir}/{season_clean}_GW{game_week}_data.csv"
+        game_week_df.to_csv(csv_filename, index=False)
 
-    print(f"Data downloaded and saved to {csv_filename}")
+        print(f"Game Week {game_week} data saved: {csv_filename}")
+
+if __name__ == "__main__":
+    SEASONS = ["2019/20"]
+    for season in SEASONS:
+        download_data(season)
+
