@@ -1,17 +1,1 @@
-# Ignore Terraform generated files
-.terraform/
-terraform.tfstate
-terraform.tfstate.backup
-crash.log
-
-# Ignore sensitive or environment-specific files
-*.tfvars
-*.tfvars.json
-.terraform.lock.hcl
-
-# System files
-*.log
-.DS_Store
-
-
-.terraform/
+bfg.jar
