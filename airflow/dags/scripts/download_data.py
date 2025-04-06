@@ -1,8 +1,5 @@
 import os
-import sys
-sys.path.append('/opt/airflow/dags/scripts')
-
-from crawler import Crawler
+from scripts.crawler import Crawler
 
 
 def download_data(season: str, start_game_week=1, end_game_week=3):

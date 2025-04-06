@@ -23,7 +23,7 @@ class Crawler:
 
     def _setup_driver(self):
         """Setup WebDriver and navigate to the target URL."""
-        path = "../Airflow/dags/chromedriver-linux64/chromedriver"
+        path = "../chromedriver-linux64/chromedriver"
         service = Service(path)
         driver = webdriver.Chrome(service=service)
         driver.get(self.url)
@@ -155,4 +155,6 @@ class Crawler:
             self.driver.quit()
         return final_dataframe
 
+# crawler = Crawler('2019/20')
+# crawler.run(1,3)
 
