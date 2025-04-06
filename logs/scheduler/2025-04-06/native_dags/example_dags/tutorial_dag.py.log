@@ -1,0 +1,22 @@
+[2025-04-06T13:11:42.593+0100] {processor.py:186} INFO - Started process (PID=12382) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:11:42.594+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-04-06T13:11:42.597+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.596+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:11:42.605+0100] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:11:42.736+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.735+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2025-04-06T13:11:42.746+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.746+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2025-04-06T13:11:42.754+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.753+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2025-04-06T13:11:42.769+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.768+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:tutorial_dag
+[2025-04-06T13:11:42.779+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.779+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:tutorial_dag
+[2025-04-06T13:11:42.787+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.787+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:tutorial_dag
+[2025-04-06T13:11:42.795+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.795+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:tutorial_dag
+[2025-04-06T13:11:42.795+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.795+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:11:42.808+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.807+0100] {dag.py:3262} INFO - Creating ORM DAG for tutorial_dag
+[2025-04-06T13:11:42.808+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:42.808+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-04-06T13:11:42.828+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.242 seconds
+[2025-04-06T13:13:01.810+0100] {processor.py:186} INFO - Started process (PID=12744) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:13:01.813+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-04-06T13:13:01.815+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:13:01.815+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:13:01.826+0100] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-06T13:13:01.845+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:13:01.845+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:13:01.864+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:13:01.864+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-04-06T13:13:01.893+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.091 seconds

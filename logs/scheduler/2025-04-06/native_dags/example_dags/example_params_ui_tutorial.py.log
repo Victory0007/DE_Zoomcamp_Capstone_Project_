@@ -1,0 +1,15 @@
+[2025-04-06T13:12:05.367+0100] {processor.py:186} INFO - Started process (PID=12409) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-04-06T13:12:05.368+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-04-06T13:12:05.370+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.369+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-04-06T13:12:05.381+0100] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-04-06T13:12:05.548+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.547+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2025-04-06T13:12:05.563+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.562+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2025-04-06T13:12:05.587+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.583+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2025-04-06T13:12:05.605+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.605+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_params_ui_tutorial
+[2025-04-06T13:12:05.616+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.616+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_params_ui_tutorial
+[2025-04-06T13:12:05.628+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.627+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_params_ui_tutorial
+[2025-04-06T13:12:05.641+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.641+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_params_ui_tutorial
+[2025-04-06T13:12:05.641+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.641+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:12:05.660+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.659+0100] {dag.py:3262} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2025-04-06T13:12:05.661+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:05.660+0100] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-04-06T13:12:05.694+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.333 seconds

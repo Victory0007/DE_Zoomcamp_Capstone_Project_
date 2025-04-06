@@ -1,0 +1,20 @@
+[2025-04-05T10:05:01.817+0100] {processor.py:186} INFO - Started process (PID=13449) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:01.818+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py for tasks to queue
+[2025-04-05T10:05:01.820+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:05:01.820+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:01.868+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:01.877+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py took 0.072 seconds
+[2025-04-05T10:05:45.551+0100] {processor.py:186} INFO - Started process (PID=13599) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:45.556+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py for tasks to queue
+[2025-04-05T10:05:45.560+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:05:45.559+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:45.623+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:05:45.632+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py took 0.115 seconds
+[2025-04-05T10:06:48.355+0100] {processor.py:186} INFO - Started process (PID=13800) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:06:48.356+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py for tasks to queue
+[2025-04-05T10:06:48.357+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:48.357+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:06:48.390+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:06:48.398+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py took 0.055 seconds
+[2025-04-05T10:07:50.482+0100] {processor.py:186} INFO - Started process (PID=13969) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:07:50.486+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py for tasks to queue
+[2025-04-05T10:07:50.488+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:50.487+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:07:50.583+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py
+[2025-04-05T10:07:50.595+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/scripts/download_data.py took 0.123 seconds

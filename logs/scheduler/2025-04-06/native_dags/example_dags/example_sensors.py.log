@@ -1,0 +1,15 @@
+[2025-04-06T13:11:54.253+0100] {processor.py:186} INFO - Started process (PID=12395) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-06T13:11:54.255+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-06T13:11:54.263+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.263+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-06T13:11:54.291+0100] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-06T13:11:54.487+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.487+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_sensors
+[2025-04-06T13:11:54.519+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.518+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_sensors
+[2025-04-06T13:11:54.539+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.538+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_sensors
+[2025-04-06T13:11:54.556+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.556+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_sensors
+[2025-04-06T13:11:54.580+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.579+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_sensors
+[2025-04-06T13:11:54.593+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.593+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_sensors
+[2025-04-06T13:11:54.604+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.603+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_sensors
+[2025-04-06T13:11:54.605+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.604+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:11:54.647+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.647+0100] {dag.py:3262} INFO - Creating ORM DAG for example_sensors
+[2025-04-06T13:11:54.648+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:54.648+0100] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-06T13:11:54.699+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.453 seconds

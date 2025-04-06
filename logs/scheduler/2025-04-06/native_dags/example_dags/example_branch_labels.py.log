@@ -1,0 +1,15 @@
+[2025-04-06T13:12:44.878+0100] {processor.py:186} INFO - Started process (PID=12630) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py
+[2025-04-06T13:12:44.879+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2025-04-06T13:12:44.882+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:44.881+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py
+[2025-04-06T13:12:44.897+0100] {processor.py:925} INFO - DAG(s) 'example_branch_labels' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py
+[2025-04-06T13:12:45.154+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.153+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_branch_labels
+[2025-04-06T13:12:45.179+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.178+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_branch_labels
+[2025-04-06T13:12:45.203+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.202+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_branch_labels
+[2025-04-06T13:12:45.227+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.226+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_branch_labels
+[2025-04-06T13:12:45.246+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.245+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_branch_labels
+[2025-04-06T13:12:45.265+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.265+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_branch_labels
+[2025-04-06T13:12:45.288+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.287+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_branch_labels
+[2025-04-06T13:12:45.288+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.288+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:12:45.307+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.307+0100] {dag.py:3262} INFO - Creating ORM DAG for example_branch_labels
+[2025-04-06T13:12:45.343+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:45.343+0100] {dag.py:4180} INFO - Setting next_dagrun for example_branch_labels to 2025-04-05 00:00:00+00:00, run_after=2025-04-06 00:00:00+00:00
+[2025-04-06T13:12:45.378+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py took 0.508 seconds

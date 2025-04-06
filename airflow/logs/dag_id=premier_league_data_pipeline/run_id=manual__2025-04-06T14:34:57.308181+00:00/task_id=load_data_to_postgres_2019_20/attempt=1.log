@@ -1,0 +1,710 @@
+[2025-04-06T16:25:57.012+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T16:25:57.030+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:25:57.041+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:25:57.041+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T16:25:57.058+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_data_to_postgres_2019_20> on 2025-04-06 14:34:57.308181+00:00
+[2025-04-06T16:25:57.063+0100] {standard_task_runner.py:72} INFO - Started process 46478 to run task
+[2025-04-06T16:25:57.067+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'load_data_to_postgres_2019_20', 'manual__2025-04-06T14:34:57.308181+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmp2mn8dzts']
+[2025-04-06T16:25:57.068+0100] {standard_task_runner.py:105} INFO - Job 42: Subtask load_data_to_postgres_2019_20
+[2025-04-06T16:25:57.108+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T16:25:57.189+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='load_data_to_postgres_2019_20' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:34:57.308181+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:34:57.308181+00:00'
+[2025-04-06T16:25:57.203+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T16:25:57.204+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T16:25:57.204+0100] {logging_mixin.py:190} INFO - Current task name:load_data_to_postgres_2019_20 state:running start_date:2025-04-06 15:25:57.031298+00:00
+[2025-04-06T16:25:57.204+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T16:25:57.205+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T16:25:57.438+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.441+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.444+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.448+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.451+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.454+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.457+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.459+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.462+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.465+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.469+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.472+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.475+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.478+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.480+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.483+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.487+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.490+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.493+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.496+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.528+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.530+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.532+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.535+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.537+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.539+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.541+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.544+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.546+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.548+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.551+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.554+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.556+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.558+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.560+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.562+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.564+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.567+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.569+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.571+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.599+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.602+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.604+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.606+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.609+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.611+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.614+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.616+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.618+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.621+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.623+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.629+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.636+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.639+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.642+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.644+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.648+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.652+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.655+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.658+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T16:25:57.699+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.702+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.706+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.710+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.713+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.717+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.721+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.725+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.728+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.732+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.736+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.739+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.743+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.746+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.750+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.754+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.758+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.762+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.765+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.768+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.805+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.811+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.815+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.819+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.822+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.825+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.829+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.834+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.838+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.842+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.846+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.850+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.854+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.858+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.861+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.865+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.869+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.872+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.875+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.879+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.910+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.913+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.917+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.921+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.925+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.930+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.933+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.938+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.942+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.946+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.950+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.953+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.957+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.960+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.963+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.967+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.971+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.975+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.979+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:57.982+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.010+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.013+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.017+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.020+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.023+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.027+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.030+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.033+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.037+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.040+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.043+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.046+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.050+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.053+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.057+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.061+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.064+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.067+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.070+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.074+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.102+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.106+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.110+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.113+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.116+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.119+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.123+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.126+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.129+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.134+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.137+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.141+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.144+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.147+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.151+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.155+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.158+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.161+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.165+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.169+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.198+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.202+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.205+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.209+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.213+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.216+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.220+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.223+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.226+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.230+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.236+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.241+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.244+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.248+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.251+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.255+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.259+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.262+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.269+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.277+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.315+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.319+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.323+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.327+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.332+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.335+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.339+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.343+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.346+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.349+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.353+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.356+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.360+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.364+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.368+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.371+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.375+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.379+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.382+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.386+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.419+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.423+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.426+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.430+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.434+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.438+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.442+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.447+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.450+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.454+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.458+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.462+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.465+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.469+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.473+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.476+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.480+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.483+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.487+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.491+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.522+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.526+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.530+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.534+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.538+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.542+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.545+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.549+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.554+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.557+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.562+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.566+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.570+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.575+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.579+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.583+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.587+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.590+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.594+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.598+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.630+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.634+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.637+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.642+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.646+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.649+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.653+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.656+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.659+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.663+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.667+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.672+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.677+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.681+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.685+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.690+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.694+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.698+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.701+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.705+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.745+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.751+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.757+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.762+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.767+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.772+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.779+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.784+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.791+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.796+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.801+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.806+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.812+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.817+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.823+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.828+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.834+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.847+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.853+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.858+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.909+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.917+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.922+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.928+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.934+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.944+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.949+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.954+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.959+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.964+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.970+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.975+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.981+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.986+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.993+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:58.999+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.004+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.009+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.014+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.020+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.080+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.086+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.092+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.110+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.118+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.124+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.130+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.139+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.144+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.150+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.155+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.161+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.166+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.172+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.178+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.183+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.189+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.194+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.200+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.205+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.250+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.254+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.258+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.263+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.267+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.271+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.275+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.281+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.285+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.291+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.295+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.301+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.306+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.310+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.313+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.318+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.322+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.326+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.330+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.334+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.371+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 18, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:25:59.405+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.409+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.413+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.417+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.421+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.425+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.430+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.434+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.438+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.443+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.447+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.450+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.454+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.459+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.464+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.468+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.472+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.477+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.481+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.485+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.522+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.526+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.530+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.534+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.539+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.543+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.547+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.551+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.555+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.559+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.563+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.567+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.572+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.576+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.580+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.584+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.589+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.594+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.599+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.604+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.642+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.646+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.649+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.652+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.655+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.658+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.661+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.664+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.669+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.672+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.675+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.678+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.682+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.685+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.688+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.692+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.696+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.706+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.719+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.724+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.776+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.782+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.787+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.792+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.796+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.800+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.807+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.811+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.817+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.822+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.828+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.833+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.840+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.845+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.849+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.855+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.861+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.866+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.871+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.876+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.955+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.962+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.969+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.976+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.990+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:25:59.997+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.003+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.008+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.015+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.020+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.025+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.030+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.036+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.041+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.046+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.052+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.058+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.063+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.068+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.073+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.114+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.119+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.124+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.129+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.133+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.138+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.143+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.148+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.153+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.158+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.162+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.166+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.172+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.177+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.181+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.189+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.194+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.199+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.205+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.209+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.262+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.267+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.271+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.276+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.281+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.285+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.290+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.296+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.302+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.308+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.317+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.322+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.327+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.332+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.339+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.344+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.350+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.354+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.358+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.363+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.400+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.404+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.409+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.414+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.418+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.423+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.429+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.434+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.439+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.442+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.447+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.452+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.457+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.462+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.467+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.475+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.480+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.484+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.489+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.494+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.534+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.538+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.543+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.548+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.553+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.559+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.572+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.579+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.585+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.589+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.592+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.596+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.600+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.605+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.610+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.614+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.619+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.623+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.628+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.632+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.707+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.712+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.717+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.728+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.732+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.735+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.739+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.742+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.746+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.756+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.761+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.765+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.769+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.772+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.776+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.780+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.784+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.789+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.792+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.796+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.828+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.831+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.835+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.839+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.843+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.846+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.850+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.854+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.857+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.861+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.864+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.868+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.872+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.876+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.879+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.883+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.886+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.890+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.894+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.901+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.934+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.938+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.941+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.945+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.949+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.953+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.956+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.960+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.964+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.967+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.973+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.989+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.994+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:00.998+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.003+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.006+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.010+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.014+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.018+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.021+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.053+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.057+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.060+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.064+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.068+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.072+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.077+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.081+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.085+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.089+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.093+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.097+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.101+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.105+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.109+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.112+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.117+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.120+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.124+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.127+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.160+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 32, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:01.191+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.195+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.199+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.203+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.207+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.211+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.215+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.219+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.222+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.227+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.231+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.234+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.238+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.241+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.245+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.248+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.253+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.257+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.261+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.265+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.295+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.299+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.302+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.305+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.309+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.313+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.316+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.320+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.331+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.335+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.339+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.342+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.348+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.352+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.356+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.361+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.365+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.368+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.372+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.375+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.407+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.411+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.415+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.418+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.422+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.425+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.429+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.433+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.437+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.440+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.444+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.447+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.451+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.455+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.459+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.463+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.467+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.471+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.475+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.479+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T16:26:01.516+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 36, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:01.546+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 37, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:01.577+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 38, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:01.577+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T16:26:01.582+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T16:26:01.582+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=load_data_to_postgres_2019_20, run_id=manual__2025-04-06T14:34:57.308181+00:00, execution_date=20250406T143457, start_date=20250406T152557, end_date=20250406T152601
+[2025-04-06T16:26:01.602+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T16:26:01.602+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T16:26:01.602+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 14:34:57.327913+00:00
+[2025-04-06T16:26:01.602+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T16:26:01.618+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T16:26:01.629+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T16:26:01.630+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

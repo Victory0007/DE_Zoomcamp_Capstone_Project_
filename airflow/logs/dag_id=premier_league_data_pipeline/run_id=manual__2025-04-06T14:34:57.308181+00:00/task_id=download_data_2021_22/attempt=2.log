@@ -1,0 +1,103 @@
+[2025-04-06T16:11:13.343+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T16:11:13.356+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.download_data_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:11:13.365+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.download_data_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:11:13.366+0100] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-06T16:11:13.384+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data_2021_22> on 2025-04-06 14:34:57.308181+00:00
+[2025-04-06T16:11:13.388+0100] {standard_task_runner.py:72} INFO - Started process 43657 to run task
+[2025-04-06T16:11:13.392+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'download_data_2021_22', 'manual__2025-04-06T14:34:57.308181+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmp9u8tt_ny']
+[2025-04-06T16:11:13.394+0100] {standard_task_runner.py:105} INFO - Job 31: Subtask download_data_2021_22
+[2025-04-06T16:11:13.444+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.download_data_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T16:11:13.524+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='download_data_2021_22' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:34:57.308181+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:34:57.308181+00:00'
+[2025-04-06T16:11:13.525+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T16:11:13.525+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T16:11:13.526+0100] {logging_mixin.py:190} INFO - Current task name:download_data_2021_22 state:running start_date:2025-04-06 15:11:13.357300+00:00
+[2025-04-06T16:11:13.526+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T16:11:13.527+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T16:11:21.336+0100] {logging_mixin.py:190} INFO - Accepted cookies
+[2025-04-06T16:11:24.695+0100] {logging_mixin.py:190} INFO - Opened game week dropdown
+[2025-04-06T16:11:25.743+0100] {logging_mixin.py:190} INFO - Selected game week 1
+[2025-04-06T16:11:44.496+0100] {logging_mixin.py:190} INFO - Selected game week 2
+[2025-04-06T16:12:01.731+0100] {logging_mixin.py:190} INFO - Selected game week 3
+[2025-04-06T16:12:20.831+0100] {logging_mixin.py:190} INFO - Selected game week 4
+[2025-04-06T16:12:30.511+0100] {logging_mixin.py:190} INFO - Selected game week 5
+[2025-04-06T16:12:48.940+0100] {logging_mixin.py:190} INFO - Selected game week 6
+[2025-04-06T16:13:08.490+0100] {logging_mixin.py:190} INFO - Selected game week 7
+[2025-04-06T16:13:26.283+0100] {logging_mixin.py:190} INFO - Selected game week 8
+[2025-04-06T16:13:45.794+0100] {logging_mixin.py:190} INFO - Selected game week 9
+[2025-04-06T16:14:04.383+0100] {logging_mixin.py:190} INFO - Selected game week 10
+[2025-04-06T16:14:13.995+0100] {logging_mixin.py:190} INFO - Selected game week 11
+[2025-04-06T16:14:33.042+0100] {logging_mixin.py:190} INFO - Selected game week 12
+[2025-04-06T16:14:51.632+0100] {logging_mixin.py:190} INFO - Selected game week 13
+[2025-04-06T16:15:02.025+0100] {logging_mixin.py:190} INFO - Selected game week 14
+[2025-04-06T16:15:18.230+0100] {logging_mixin.py:190} INFO - Selected game week 15
+[2025-04-06T16:15:27.458+0100] {logging_mixin.py:190} INFO - Selected game week 16
+[2025-04-06T16:15:47.712+0100] {logging_mixin.py:190} INFO - Selected game week 17
+[2025-04-06T16:15:57.172+0100] {logging_mixin.py:190} INFO - Selected game week 18
+[2025-04-06T16:16:15.939+0100] {logging_mixin.py:190} INFO - Selected game week 19
+[2025-04-06T16:16:25.738+0100] {logging_mixin.py:190} INFO - Selected game week 20
+[2025-04-06T16:16:41.794+0100] {logging_mixin.py:190} INFO - Selected game week 21
+[2025-04-06T16:17:02.195+0100] {logging_mixin.py:190} INFO - Selected game week 22
+[2025-04-06T16:17:11.816+0100] {logging_mixin.py:190} INFO - Selected game week 23
+[2025-04-06T16:17:27.301+0100] {logging_mixin.py:190} INFO - Selected game week 24
+[2025-04-06T16:17:37.458+0100] {logging_mixin.py:190} INFO - Selected game week 25
+[2025-04-06T16:17:46.821+0100] {logging_mixin.py:190} INFO - Selected game week 26
+[2025-04-06T16:18:02.283+0100] {logging_mixin.py:190} INFO - Selected game week 27
+[2025-04-06T16:18:12.037+0100] {logging_mixin.py:190} INFO - Selected game week 28
+[2025-04-06T16:18:31.345+0100] {logging_mixin.py:190} INFO - Selected game week 29
+[2025-04-06T16:18:50.517+0100] {logging_mixin.py:190} INFO - Selected game week 30
+[2025-04-06T16:19:00.049+0100] {logging_mixin.py:190} INFO - Selected game week 31
+[2025-04-06T16:19:09.324+0100] {logging_mixin.py:190} INFO - Selected game week 32
+[2025-04-06T16:19:18.660+0100] {logging_mixin.py:190} INFO - Selected game week 33
+[2025-04-06T16:19:35.952+0100] {logging_mixin.py:190} INFO - Selected game week 34
+[2025-04-06T16:19:52.132+0100] {logging_mixin.py:190} INFO - Selected game week 35
+[2025-04-06T16:20:09.153+0100] {logging_mixin.py:190} INFO - Selected game week 36
+[2025-04-06T16:20:25.927+0100] {logging_mixin.py:190} INFO - Selected game week 37
+[2025-04-06T16:20:42.028+0100] {logging_mixin.py:190} INFO - Selected game week 38
+[2025-04-06T16:20:58.536+0100] {logging_mixin.py:190} INFO - Game Week 1 data saved: ../data/2021_22_GW1_data.csv
+[2025-04-06T16:20:58.538+0100] {logging_mixin.py:190} INFO - Game Week 2 data saved: ../data/2021_22_GW2_data.csv
+[2025-04-06T16:20:58.540+0100] {logging_mixin.py:190} INFO - Game Week 3 data saved: ../data/2021_22_GW3_data.csv
+[2025-04-06T16:20:58.541+0100] {logging_mixin.py:190} INFO - Game Week 4 data saved: ../data/2021_22_GW4_data.csv
+[2025-04-06T16:20:58.543+0100] {logging_mixin.py:190} INFO - Game Week 5 data saved: ../data/2021_22_GW5_data.csv
+[2025-04-06T16:20:58.545+0100] {logging_mixin.py:190} INFO - Game Week 6 data saved: ../data/2021_22_GW6_data.csv
+[2025-04-06T16:20:58.547+0100] {logging_mixin.py:190} INFO - Game Week 7 data saved: ../data/2021_22_GW7_data.csv
+[2025-04-06T16:20:58.549+0100] {logging_mixin.py:190} INFO - Game Week 8 data saved: ../data/2021_22_GW8_data.csv
+[2025-04-06T16:20:58.551+0100] {logging_mixin.py:190} INFO - Game Week 9 data saved: ../data/2021_22_GW9_data.csv
+[2025-04-06T16:20:58.553+0100] {logging_mixin.py:190} INFO - Game Week 10 data saved: ../data/2021_22_GW10_data.csv
+[2025-04-06T16:20:58.555+0100] {logging_mixin.py:190} INFO - Game Week 11 data saved: ../data/2021_22_GW11_data.csv
+[2025-04-06T16:20:58.557+0100] {logging_mixin.py:190} INFO - Game Week 12 data saved: ../data/2021_22_GW12_data.csv
+[2025-04-06T16:20:58.559+0100] {logging_mixin.py:190} INFO - Game Week 13 data saved: ../data/2021_22_GW13_data.csv
+[2025-04-06T16:20:58.561+0100] {logging_mixin.py:190} INFO - Game Week 14 data saved: ../data/2021_22_GW14_data.csv
+[2025-04-06T16:20:58.563+0100] {logging_mixin.py:190} INFO - Game Week 15 data saved: ../data/2021_22_GW15_data.csv
+[2025-04-06T16:20:58.565+0100] {logging_mixin.py:190} INFO - Game Week 16 data saved: ../data/2021_22_GW16_data.csv
+[2025-04-06T16:20:58.566+0100] {logging_mixin.py:190} INFO - Game Week 17 data saved: ../data/2021_22_GW17_data.csv
+[2025-04-06T16:20:58.568+0100] {logging_mixin.py:190} INFO - Game Week 18 data saved: ../data/2021_22_GW18_data.csv
+[2025-04-06T16:20:58.570+0100] {logging_mixin.py:190} INFO - Game Week 19 data saved: ../data/2021_22_GW19_data.csv
+[2025-04-06T16:20:58.572+0100] {logging_mixin.py:190} INFO - Game Week 20 data saved: ../data/2021_22_GW20_data.csv
+[2025-04-06T16:20:58.574+0100] {logging_mixin.py:190} INFO - Game Week 21 data saved: ../data/2021_22_GW21_data.csv
+[2025-04-06T16:20:58.577+0100] {logging_mixin.py:190} INFO - Game Week 22 data saved: ../data/2021_22_GW22_data.csv
+[2025-04-06T16:20:58.579+0100] {logging_mixin.py:190} INFO - Game Week 23 data saved: ../data/2021_22_GW23_data.csv
+[2025-04-06T16:20:58.581+0100] {logging_mixin.py:190} INFO - Game Week 24 data saved: ../data/2021_22_GW24_data.csv
+[2025-04-06T16:20:58.583+0100] {logging_mixin.py:190} INFO - Game Week 25 data saved: ../data/2021_22_GW25_data.csv
+[2025-04-06T16:20:58.585+0100] {logging_mixin.py:190} INFO - Game Week 26 data saved: ../data/2021_22_GW26_data.csv
+[2025-04-06T16:20:58.587+0100] {logging_mixin.py:190} INFO - Game Week 27 data saved: ../data/2021_22_GW27_data.csv
+[2025-04-06T16:20:58.589+0100] {logging_mixin.py:190} INFO - Game Week 28 data saved: ../data/2021_22_GW28_data.csv
+[2025-04-06T16:20:58.591+0100] {logging_mixin.py:190} INFO - Game Week 29 data saved: ../data/2021_22_GW29_data.csv
+[2025-04-06T16:20:58.592+0100] {logging_mixin.py:190} INFO - Game Week 30 data saved: ../data/2021_22_GW30_data.csv
+[2025-04-06T16:20:58.594+0100] {logging_mixin.py:190} INFO - Game Week 31 data saved: ../data/2021_22_GW31_data.csv
+[2025-04-06T16:20:58.596+0100] {logging_mixin.py:190} INFO - Game Week 32 data saved: ../data/2021_22_GW32_data.csv
+[2025-04-06T16:20:58.598+0100] {logging_mixin.py:190} INFO - Game Week 33 data saved: ../data/2021_22_GW33_data.csv
+[2025-04-06T16:20:58.600+0100] {logging_mixin.py:190} INFO - Game Week 34 data saved: ../data/2021_22_GW34_data.csv
+[2025-04-06T16:20:58.601+0100] {logging_mixin.py:190} INFO - Game Week 35 data saved: ../data/2021_22_GW35_data.csv
+[2025-04-06T16:20:58.603+0100] {logging_mixin.py:190} INFO - Game Week 36 data saved: ../data/2021_22_GW36_data.csv
+[2025-04-06T16:20:58.605+0100] {logging_mixin.py:190} INFO - Game Week 37 data saved: ../data/2021_22_GW37_data.csv
+[2025-04-06T16:20:58.607+0100] {logging_mixin.py:190} INFO - Game Week 38 data saved: ../data/2021_22_GW38_data.csv
+[2025-04-06T16:20:58.608+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T16:20:58.613+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T16:20:58.614+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=download_data_2021_22, run_id=manual__2025-04-06T14:34:57.308181+00:00, execution_date=20250406T143457, start_date=20250406T151113, end_date=20250406T152058
+[2025-04-06T16:20:58.637+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T16:20:58.637+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T16:20:58.638+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 14:34:57.327913+00:00
+[2025-04-06T16:20:58.638+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T16:20:58.666+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T16:20:58.686+0100] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T16:20:58.690+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

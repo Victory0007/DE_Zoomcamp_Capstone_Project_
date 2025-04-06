@@ -1,0 +1,66 @@
+[2025-04-06T14:12:02.645+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T14:12:02.664+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2023_24 manual__2025-04-06T12:42:48.438916+00:00 [queued]>
+[2025-04-06T14:12:02.674+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2023_24 manual__2025-04-06T12:42:48.438916+00:00 [queued]>
+[2025-04-06T14:12:02.675+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T14:12:02.690+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_data_to_postgres_2023_24> on 2025-04-06 12:42:48.438916+00:00
+[2025-04-06T14:12:02.695+0100] {standard_task_runner.py:72} INFO - Started process 25156 to run task
+[2025-04-06T14:12:02.698+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'load_data_to_postgres_2023_24', 'manual__2025-04-06T12:42:48.438916+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmpavtx_sjo']
+[2025-04-06T14:12:02.699+0100] {standard_task_runner.py:105} INFO - Job 25: Subtask load_data_to_postgres_2023_24
+[2025-04-06T14:12:02.729+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2023_24 manual__2025-04-06T12:42:48.438916+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T14:12:02.777+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='load_data_to_postgres_2023_24' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T12:42:48.438916+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T12:42:48.438916+00:00'
+[2025-04-06T14:12:02.778+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T14:12:02.779+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T14:12:02.779+0100] {logging_mixin.py:190} INFO - Current task name:load_data_to_postgres_2023_24 state:running start_date:2025-04-06 13:12:02.664663+00:00
+[2025-04-06T14:12:02.779+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T14:12:02.779+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T14:12:02.830+0100] {logging_mixin.py:190} INFO - Table 2023/24_premier_league_data created and data uploaded.
+[2025-04-06T14:12:02.962+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.965+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.969+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.972+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.976+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.980+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.984+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.987+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.991+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.994+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:02.998+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.003+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.006+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.010+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.013+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.017+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.021+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.025+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.031+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.035+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.071+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.074+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.078+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.081+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.085+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.089+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.093+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.097+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.100+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.104+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.107+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.110+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.114+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.117+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.120+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.123+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.127+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.130+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.133+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.137+0100] {logging_mixin.py:190} INFO - Row inserted into 2023/24_premier_league_data.
+[2025-04-06T14:12:03.138+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T14:12:03.142+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T14:12:03.143+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=load_data_to_postgres_2023_24, run_id=manual__2025-04-06T12:42:48.438916+00:00, execution_date=20250406T124248, start_date=20250406T131202, end_date=20250406T131203
+[2025-04-06T14:12:03.160+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T14:12:03.160+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T14:12:03.160+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 12:57:41.209428+00:00
+[2025-04-06T14:12:03.160+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T14:12:03.191+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T14:12:03.204+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T14:12:03.205+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

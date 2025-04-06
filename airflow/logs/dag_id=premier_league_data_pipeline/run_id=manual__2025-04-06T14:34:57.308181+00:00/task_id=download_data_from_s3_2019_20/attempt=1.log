@@ -1,0 +1,64 @@
+[2025-04-06T16:23:25.358+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T16:23:25.378+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.download_data_from_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:23:25.386+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.download_data_from_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:23:25.386+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T16:23:25.403+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data_from_s3_2019_20> on 2025-04-06 14:34:57.308181+00:00
+[2025-04-06T16:23:25.408+0100] {standard_task_runner.py:72} INFO - Started process 45754 to run task
+[2025-04-06T16:23:25.416+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'download_data_from_s3_2019_20', 'manual__2025-04-06T14:34:57.308181+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmp_p0pd91f']
+[2025-04-06T16:23:25.417+0100] {standard_task_runner.py:105} INFO - Job 37: Subtask download_data_from_s3_2019_20
+[2025-04-06T16:23:25.450+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.download_data_from_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T16:23:25.505+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='download_data_from_s3_2019_20' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:34:57.308181+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:34:57.308181+00:00'
+[2025-04-06T16:23:25.505+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T16:23:25.506+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T16:23:25.506+0100] {logging_mixin.py:190} INFO - Current task name:download_data_from_s3_2019_20 state:running start_date:2025-04-06 15:23:25.378656+00:00
+[2025-04-06T16:23:25.506+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T16:23:25.506+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T16:23:25.624+0100] {credentials.py:1352} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-04-06T16:23:26.973+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW1_data.csv to ../data/2019_20_GW1_data.csv
+[2025-04-06T16:23:27.586+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW2_data.csv to ../data/2019_20_GW2_data.csv
+[2025-04-06T16:23:28.201+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW3_data.csv to ../data/2019_20_GW3_data.csv
+[2025-04-06T16:23:28.712+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW4_data.csv to ../data/2019_20_GW4_data.csv
+[2025-04-06T16:23:29.255+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW5_data.csv to ../data/2019_20_GW5_data.csv
+[2025-04-06T16:23:29.840+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW6_data.csv to ../data/2019_20_GW6_data.csv
+[2025-04-06T16:23:30.453+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW7_data.csv to ../data/2019_20_GW7_data.csv
+[2025-04-06T16:23:31.068+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW8_data.csv to ../data/2019_20_GW8_data.csv
+[2025-04-06T16:23:31.682+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW9_data.csv to ../data/2019_20_GW9_data.csv
+[2025-04-06T16:23:32.296+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW10_data.csv to ../data/2019_20_GW10_data.csv
+[2025-04-06T16:23:32.833+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW11_data.csv to ../data/2019_20_GW11_data.csv
+[2025-04-06T16:23:33.423+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW12_data.csv to ../data/2019_20_GW12_data.csv
+[2025-04-06T16:23:34.038+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW13_data.csv to ../data/2019_20_GW13_data.csv
+[2025-04-06T16:23:34.652+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW14_data.csv to ../data/2019_20_GW14_data.csv
+[2025-04-06T16:23:35.267+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW15_data.csv to ../data/2019_20_GW15_data.csv
+[2025-04-06T16:23:35.881+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW16_data.csv to ../data/2019_20_GW16_data.csv
+[2025-04-06T16:23:36.495+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW17_data.csv to ../data/2019_20_GW17_data.csv
+[2025-04-06T16:23:37.110+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW18_data.csv to ../data/2019_20_GW18_data.csv
+[2025-04-06T16:23:37.725+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW19_data.csv to ../data/2019_20_GW19_data.csv
+[2025-04-06T16:23:38.338+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW20_data.csv to ../data/2019_20_GW20_data.csv
+[2025-04-06T16:23:38.814+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW21_data.csv to ../data/2019_20_GW21_data.csv
+[2025-04-06T16:23:39.362+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW22_data.csv to ../data/2019_20_GW22_data.csv
+[2025-04-06T16:23:39.977+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW23_data.csv to ../data/2019_20_GW23_data.csv
+[2025-04-06T16:23:40.592+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW24_data.csv to ../data/2019_20_GW24_data.csv
+[2025-04-06T16:23:41.206+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW25_data.csv to ../data/2019_20_GW25_data.csv
+[2025-04-06T16:23:41.820+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW26_data.csv to ../data/2019_20_GW26_data.csv
+[2025-04-06T16:23:42.434+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW27_data.csv to ../data/2019_20_GW27_data.csv
+[2025-04-06T16:23:43.049+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW28_data.csv to ../data/2019_20_GW28_data.csv
+[2025-04-06T16:23:43.663+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW29_data.csv to ../data/2019_20_GW29_data.csv
+[2025-04-06T16:23:44.277+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW30_data.csv to ../data/2019_20_GW30_data.csv
+[2025-04-06T16:23:44.892+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW31_data.csv to ../data/2019_20_GW31_data.csv
+[2025-04-06T16:23:45.507+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW32_data.csv to ../data/2019_20_GW32_data.csv
+[2025-04-06T16:23:46.121+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW33_data.csv to ../data/2019_20_GW33_data.csv
+[2025-04-06T16:23:46.735+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW34_data.csv to ../data/2019_20_GW34_data.csv
+[2025-04-06T16:23:47.350+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW35_data.csv to ../data/2019_20_GW35_data.csv
+[2025-04-06T16:23:47.965+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW36_data.csv to ../data/2019_20_GW36_data.csv
+[2025-04-06T16:23:48.520+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW37_data.csv to ../data/2019_20_GW37_data.csv
+[2025-04-06T16:23:49.091+0100] {logging_mixin.py:190} INFO - Downloaded 2019_20_GW38_data.csv to ../data/2019_20_GW38_data.csv
+[2025-04-06T16:23:49.093+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T16:23:49.100+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T16:23:49.100+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=download_data_from_s3_2019_20, run_id=manual__2025-04-06T14:34:57.308181+00:00, execution_date=20250406T143457, start_date=20250406T152325, end_date=20250406T152349
+[2025-04-06T16:23:49.139+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T16:23:49.139+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T16:23:49.140+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 14:34:57.327913+00:00
+[2025-04-06T16:23:49.140+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T16:23:49.188+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T16:23:49.234+0100] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T16:23:49.242+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

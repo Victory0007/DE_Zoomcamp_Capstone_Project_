@@ -1,0 +1,16 @@
+[2025-04-06T13:12:08.870+0100] {processor.py:186} INFO - Started process (PID=12416) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-04-06T13:12:08.871+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2025-04-06T13:12:08.874+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:08.873+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-04-06T13:12:08.886+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:08.886+0100] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2025-04-06T13:12:08.889+0100] {processor.py:925} INFO - DAG(s) 'example_python_decorator' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2025-04-06T13:12:09.037+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.037+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_python_decorator
+[2025-04-06T13:12:09.052+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.052+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_python_decorator
+[2025-04-06T13:12:09.062+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.062+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_python_decorator
+[2025-04-06T13:12:09.095+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.095+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_python_decorator
+[2025-04-06T13:12:09.115+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.115+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_python_decorator
+[2025-04-06T13:12:09.126+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.126+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_python_decorator
+[2025-04-06T13:12:09.138+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.137+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_python_decorator
+[2025-04-06T13:12:09.139+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.138+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:12:09.159+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.159+0100] {dag.py:3262} INFO - Creating ORM DAG for example_python_decorator
+[2025-04-06T13:12:09.160+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:09.160+0100] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2025-04-06T13:12:09.186+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py took 0.323 seconds

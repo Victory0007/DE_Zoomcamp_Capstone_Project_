@@ -1,0 +1,22 @@
+[2025-04-06T13:11:36.975+0100] {processor.py:186} INFO - Started process (PID=12329) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:11:36.976+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-04-06T13:11:36.978+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:36.978+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:11:36.995+0100] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:11:37.168+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.167+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_xcom
+[2025-04-06T13:11:37.190+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.189+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_xcom
+[2025-04-06T13:11:37.206+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.205+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_xcom
+[2025-04-06T13:11:37.240+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.240+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2025-04-06T13:11:37.261+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.261+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2025-04-06T13:11:37.276+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.275+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2025-04-06T13:11:37.290+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.289+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2025-04-06T13:11:37.290+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.290+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:11:37.313+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.313+0100] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2025-04-06T13:11:37.329+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:37.329+0100] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-04-06T13:11:37.366+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.398 seconds
+[2025-04-06T13:12:57.698+0100] {processor.py:186} INFO - Started process (PID=12740) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:12:57.699+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-04-06T13:12:57.701+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:57.700+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:12:57.716+0100] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-04-06T13:12:57.739+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:57.739+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:12:57.771+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:57.771+0100] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-04-06T13:12:57.814+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.125 seconds

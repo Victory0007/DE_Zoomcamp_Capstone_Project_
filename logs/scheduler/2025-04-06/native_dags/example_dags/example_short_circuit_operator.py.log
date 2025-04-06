@@ -1,0 +1,15 @@
+[2025-04-06T13:12:01.474+0100] {processor.py:186} INFO - Started process (PID=12403) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-04-06T13:12:01.475+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-04-06T13:12:01.479+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.478+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-04-06T13:12:01.491+0100] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-04-06T13:12:01.655+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.652+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2025-04-06T13:12:01.681+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.680+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2025-04-06T13:12:01.695+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.695+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2025-04-06T13:12:01.715+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.714+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_short_circuit_operator
+[2025-04-06T13:12:01.728+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.727+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_short_circuit_operator
+[2025-04-06T13:12:01.742+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.741+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_short_circuit_operator
+[2025-04-06T13:12:01.752+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.751+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_short_circuit_operator
+[2025-04-06T13:12:01.753+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.752+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:12:01.764+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.764+0100] {dag.py:3262} INFO - Creating ORM DAG for example_short_circuit_operator
+[2025-04-06T13:12:01.765+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:01.765+0100] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_operator to None, run_after=None
+[2025-04-06T13:12:01.799+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.334 seconds

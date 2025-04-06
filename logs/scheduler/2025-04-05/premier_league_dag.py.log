@@ -1,0 +1,454 @@
+[2025-04-05T09:52:04.687+0100] {processor.py:186} INFO - Started process (PID=11539) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:52:04.688+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:52:04.689+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:52:04.689+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:52:04.692+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:52:04.692+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:52:04.693+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:52:04.709+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.027 seconds
+[2025-04-05T09:54:59.088+0100] {processor.py:186} INFO - Started process (PID=11737) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:54:59.088+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:54:59.090+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:54:59.089+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:54:59.092+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:54:59.092+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:54:59.092+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:54:59.106+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.023 seconds
+[2025-04-05T09:56:06.772+0100] {processor.py:186} INFO - Started process (PID=12074) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:06.775+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:56:06.776+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:56:06.776+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:06.779+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:56:06.779+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:56:06.780+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:06.794+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.027 seconds
+[2025-04-05T09:56:39.250+0100] {processor.py:186} INFO - Started process (PID=12229) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:39.253+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:56:39.255+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:56:39.254+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:39.257+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:56:39.257+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:56:39.258+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:56:39.272+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.026 seconds
+[2025-04-05T09:57:32.146+0100] {processor.py:186} INFO - Started process (PID=12292) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:57:32.149+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:57:32.150+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:57:32.150+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:57:32.153+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:57:32.153+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:57:32.153+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:57:32.166+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.025 seconds
+[2025-04-05T09:58:27.518+0100] {processor.py:186} INFO - Started process (PID=12356) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:58:27.521+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:58:27.524+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:58:27.523+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:58:27.528+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:58:27.527+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:58:27.529+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:58:27.550+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.041 seconds
+[2025-04-05T09:59:23.452+0100] {processor.py:186} INFO - Started process (PID=12427) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:59:23.456+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T09:59:23.460+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:59:23.459+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:59:23.465+0100] {logging_mixin.py:190} INFO - [2025-04-05T09:59:23.464+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T09:59:23.465+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T09:59:23.485+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.043 seconds
+[2025-04-05T10:00:21.988+0100] {processor.py:186} INFO - Started process (PID=12649) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:00:21.991+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:00:21.994+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:00:21.994+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:00:21.999+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:00:21.998+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 7, in <module>
+    from scripts.download_data import download_data
+ModuleNotFoundError: No module named 'scripts'
+[2025-04-05T10:00:22.000+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:00:22.019+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.041 seconds
+[2025-04-05T10:01:18.650+0100] {processor.py:186} INFO - Started process (PID=12887) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:01:18.651+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:01:18.652+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:18.652+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:01:18.797+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:01:18.997+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:18.997+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:premier_league_data_pipeline
+[2025-04-05T10:01:19.007+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.006+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:premier_league_data_pipeline
+[2025-04-05T10:01:19.014+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.014+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:premier_league_data_pipeline
+[2025-04-05T10:01:19.025+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.024+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:premier_league_data_pipeline
+[2025-04-05T10:01:19.031+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.031+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:premier_league_data_pipeline
+[2025-04-05T10:01:19.038+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.037+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:premier_league_data_pipeline
+[2025-04-05T10:01:19.046+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.046+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:premier_league_data_pipeline
+[2025-04-05T10:01:19.047+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.047+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:01:19.057+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.057+0100] {dag.py:3262} INFO - Creating ORM DAG for premier_league_data_pipeline
+[2025-04-05T10:01:19.064+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:01:19.064+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:01:19.082+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.437 seconds
+[2025-04-05T10:02:15.993+0100] {processor.py:186} INFO - Started process (PID=12993) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:15.996+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:02:15.998+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:15.997+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:16.181+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:16.192+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:16.192+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:02:16.208+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:16.208+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:02:16.223+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.236 seconds
+[2025-04-05T10:02:45.918+0100] {processor.py:186} INFO - Started process (PID=13085) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:45.918+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:02:45.920+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:45.920+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:46.093+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:02:46.104+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:46.103+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:02:46.121+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:02:46.121+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:02:46.138+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.227 seconds
+[2025-04-05T10:03:44.441+0100] {processor.py:186} INFO - Started process (PID=13159) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:03:44.442+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:03:44.444+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:03:44.443+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:03:44.619+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:03:44.630+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:03:44.629+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:03:44.644+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:03:44.644+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:03:44.658+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.225 seconds
+[2025-04-05T10:04:15.488+0100] {processor.py:186} INFO - Started process (PID=13233) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:15.489+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:04:15.492+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:15.492+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:15.684+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:15.694+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:15.694+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:04:15.709+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:15.709+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:04:15.728+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.249 seconds
+[2025-04-05T10:04:46.342+0100] {processor.py:186} INFO - Started process (PID=13287) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:46.345+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:04:46.347+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:46.346+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:46.520+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:04:46.531+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:46.530+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:04:46.546+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:04:46.546+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:04:46.563+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.229 seconds
+[2025-04-05T10:05:44.129+0100] {processor.py:186} INFO - Started process (PID=13598) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:05:44.133+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:05:44.136+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:05:44.135+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:05:44.344+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:05:44.356+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:05:44.356+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:05:44.377+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:05:44.377+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:05:44.398+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.286 seconds
+[2025-04-05T10:06:15.632+0100] {processor.py:186} INFO - Started process (PID=13646) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:15.634+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:06:15.635+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:15.635+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:15.811+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:15.823+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:15.823+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:06:15.838+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:15.838+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:06:15.860+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.233 seconds
+[2025-04-05T10:06:46.950+0100] {processor.py:186} INFO - Started process (PID=13799) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:46.950+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:06:46.952+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:46.951+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:47.125+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:06:47.136+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:47.136+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:06:47.152+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:06:47.152+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:06:47.167+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.223 seconds
+[2025-04-05T10:07:18.106+0100] {processor.py:186} INFO - Started process (PID=13852) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:18.108+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:07:18.109+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:18.109+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:18.282+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:18.293+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:18.292+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:07:18.307+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:18.307+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:07:18.323+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.224 seconds
+[2025-04-05T10:07:48.886+0100] {processor.py:186} INFO - Started process (PID=13960) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:48.887+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:07:48.889+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:48.888+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:49.237+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:07:49.253+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:49.252+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:07:49.294+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:07:49.294+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:07:49.324+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.457 seconds
+[2025-04-05T10:08:21.963+0100] {processor.py:186} INFO - Started process (PID=14153) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:21.968+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:08:21.974+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:21.972+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:22.314+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:22.362+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:22.353+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:08:22.396+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:22.395+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:08:22.427+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.491 seconds
+[2025-04-05T10:08:57.986+0100] {processor.py:186} INFO - Started process (PID=14272) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:57.989+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:08:57.992+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:57.991+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:58.174+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:08:58.184+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:58.183+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:08:58.200+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:08:58.200+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:08:58.218+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.244 seconds
+[2025-04-05T10:09:34.140+0100] {processor.py:186} INFO - Started process (PID=14344) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:09:34.143+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:09:34.144+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:09:34.144+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:09:34.316+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:09:34.325+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:09:34.324+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:09:34.339+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:09:34.339+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:09:34.356+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.221 seconds
+[2025-04-05T10:10:05.143+0100] {processor.py:186} INFO - Started process (PID=14426) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:10:05.146+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:10:05.149+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:10:05.148+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:10:05.327+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:10:05.335+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:10:05.335+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:10:05.350+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:10:05.350+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:10:05.376+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.245 seconds
+[2025-04-05T10:11:03.471+0100] {processor.py:186} INFO - Started process (PID=14586) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:03.474+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:11:03.477+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:11:03.476+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:03.661+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:03.670+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:11:03.670+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-05T10:11:03.684+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:11:03.684+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-05T10:11:03.702+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.242 seconds
+[2025-04-05T10:11:35.680+0100] {processor.py:186} INFO - Started process (PID=14836) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:35.681+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:11:35.683+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:11:35.682+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:35.746+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:11:35.745+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T10:11:35.747+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:11:35.768+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.093 seconds
+[2025-04-05T10:12:06.933+0100] {processor.py:186} INFO - Started process (PID=15001) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:06.935+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:12:06.936+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:12:06.936+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:07.079+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:12:07.078+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T10:12:07.080+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:07.095+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.169 seconds
+[2025-04-05T10:12:40.234+0100] {processor.py:186} INFO - Started process (PID=15045) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:40.237+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:12:40.238+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:12:40.238+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:40.284+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:12:40.284+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T10:12:40.285+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:12:40.297+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.072 seconds
+[2025-04-05T10:13:11.863+0100] {processor.py:186} INFO - Started process (PID=15099) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:13:11.864+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:13:11.866+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:13:11.866+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:13:11.910+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:13:11.909+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T10:13:11.910+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:13:11.924+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.070 seconds
+[2025-04-05T10:14:06.333+0100] {processor.py:186} INFO - Started process (PID=15183) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:14:06.336+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T10:14:06.337+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:14:06.337+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:14:06.380+0100] {logging_mixin.py:190} INFO - [2025-04-05T10:14:06.379+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T10:14:06.380+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T10:14:06.394+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.067 seconds
+[2025-04-05T12:24:02.963+0100] {processor.py:186} INFO - Started process (PID=15493) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T12:24:02.966+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py for tasks to queue
+[2025-04-05T12:24:02.969+0100] {logging_mixin.py:190} INFO - [2025-04-05T12:24:02.968+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T12:24:03.021+0100] {logging_mixin.py:190} INFO - [2025-04-05T12:24:03.020+0100] {dagbag.py:387} ERROR - Failed to import: /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: ../chromedriver-linux64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py", line 10, in <module>
+    from scripts.download_data import download_data
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/download_data.py", line 5, in <module>
+    from scripts.crawler import Crawler
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 158, in <module>
+    crawler = Crawler('2019/20')
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 21, in __init__
+    self.driver = self._setup_driver()
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/scripts/crawler.py", line 28, in _setup_driver
+    driver = webdriver.Chrome(service=service)
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-05T12:24:03.022+0100] {processor.py:927} WARNING - No viable dags retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py
+[2025-04-05T12:24:03.036+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/dags/premier_league_dag.py took 0.086 seconds

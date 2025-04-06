@@ -23,11 +23,15 @@ class Crawler:
 
     def _setup_driver(self):
         """Setup WebDriver and navigate to the target URL."""
-        path = "../chromedriver-linux64/chromedriver"
-        service = Service(path)
-        driver = webdriver.Chrome(service=service)
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.binary_location = "/opt/google/chrome/chrome"  # Ensure this matches your system
+
+        service = Service("/home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/chromedriver-linux64/chromedriver")
+
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.get(self.url)
         return driver
+
 
     def accept_cookies(self):
         """Accept the cookies popup if present."""

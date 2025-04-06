@@ -1,0 +1,70 @@
+[2025-04-06T14:11:45.474+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T14:11:45.498+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T12:42:48.438916+00:00 [queued]>
+[2025-04-06T14:11:45.511+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T12:42:48.438916+00:00 [queued]>
+[2025-04-06T14:11:45.511+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T14:11:45.531+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_data_to_postgres_2019_20> on 2025-04-06 12:42:48.438916+00:00
+[2025-04-06T14:11:45.537+0100] {standard_task_runner.py:72} INFO - Started process 25081 to run task
+[2025-04-06T14:11:45.542+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'load_data_to_postgres_2019_20', 'manual__2025-04-06T12:42:48.438916+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmpxyjvrj4g']
+[2025-04-06T14:11:45.543+0100] {standard_task_runner.py:105} INFO - Job 21: Subtask load_data_to_postgres_2019_20
+[2025-04-06T14:11:45.589+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2019_20 manual__2025-04-06T12:42:48.438916+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T14:11:45.661+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='load_data_to_postgres_2019_20' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T12:42:48.438916+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T12:42:48.438916+00:00'
+[2025-04-06T14:11:45.662+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T14:11:45.663+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T14:11:45.663+0100] {logging_mixin.py:190} INFO - Current task name:load_data_to_postgres_2019_20 state:running start_date:2025-04-06 13:11:45.499078+00:00
+[2025-04-06T14:11:45.664+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T14:11:45.664+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T14:11:45.880+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.884+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.887+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.891+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.895+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.899+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.903+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.908+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.911+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.915+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.918+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.921+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.925+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.928+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.931+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.935+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.938+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.942+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.945+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.948+0100] {logging_mixin.py:190} INFO - Row inserted into 2019/20_premier_league_data.
+[2025-04-06T14:11:45.985+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2019/20_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 2, 'season': '2019/20'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T14:11:46.012+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.014+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.016+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.019+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.021+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.023+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.026+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.028+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.030+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.032+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.034+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.036+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.039+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.041+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.044+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.046+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.048+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.050+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.052+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.054+0100] {logging_mixin.py:190} INFO - Row already exists in 2019/20_premier_league_data. Skipping insertion.
+[2025-04-06T14:11:46.055+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T14:11:46.059+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T14:11:46.060+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=load_data_to_postgres_2019_20, run_id=manual__2025-04-06T12:42:48.438916+00:00, execution_date=20250406T124248, start_date=20250406T131145, end_date=20250406T131146
+[2025-04-06T14:11:46.073+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T14:11:46.074+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T14:11:46.074+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 12:57:41.209428+00:00
+[2025-04-06T14:11:46.074+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T14:11:46.122+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T14:11:46.133+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T14:11:46.134+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

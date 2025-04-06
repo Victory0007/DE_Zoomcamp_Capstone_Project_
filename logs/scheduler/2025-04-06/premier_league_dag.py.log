@@ -1,0 +1,15 @@
+[2025-04-06T13:11:27.154+0100] {processor.py:186} INFO - Started process (PID=12279) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/premier_league_dag.py
+[2025-04-06T13:11:27.155+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/premier_league_dag.py for tasks to queue
+[2025-04-06T13:11:27.156+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.156+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/premier_league_dag.py
+[2025-04-06T13:11:27.379+0100] {processor.py:925} INFO - DAG(s) 'premier_league_data_pipeline' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/premier_league_dag.py
+[2025-04-06T13:11:27.530+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.529+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:premier_league_data_pipeline
+[2025-04-06T13:11:27.546+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.545+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:premier_league_data_pipeline
+[2025-04-06T13:11:27.561+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.557+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:premier_league_data_pipeline
+[2025-04-06T13:11:27.575+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.574+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:premier_league_data_pipeline
+[2025-04-06T13:11:27.588+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.588+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:premier_league_data_pipeline
+[2025-04-06T13:11:27.717+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.717+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:premier_league_data_pipeline
+[2025-04-06T13:11:27.732+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.731+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:premier_league_data_pipeline
+[2025-04-06T13:11:27.732+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.732+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-06T13:11:27.755+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.755+0100] {dag.py:3262} INFO - Creating ORM DAG for premier_league_data_pipeline
+[2025-04-06T13:11:27.765+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:11:27.765+0100] {dag.py:4180} INFO - Setting next_dagrun for premier_league_data_pipeline to 2025-04-06 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-06T13:11:27.786+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/airflow/dags/premier_league_dag.py took 0.641 seconds

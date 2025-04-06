@@ -1,0 +1,410 @@
+[2025-04-06T16:26:31.540+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T16:26:31.559+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:26:31.572+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:26:31.573+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T16:26:31.589+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_data_to_postgres_2021_22> on 2025-04-06 14:34:57.308181+00:00
+[2025-04-06T16:26:31.593+0100] {standard_task_runner.py:72} INFO - Started process 46586 to run task
+[2025-04-06T16:26:31.604+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'load_data_to_postgres_2021_22', 'manual__2025-04-06T14:34:57.308181+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmpn75rq6o_']
+[2025-04-06T16:26:31.605+0100] {standard_task_runner.py:105} INFO - Job 46: Subtask load_data_to_postgres_2021_22
+[2025-04-06T16:26:31.633+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.load_data_to_postgres_2021_22 manual__2025-04-06T14:34:57.308181+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T16:26:31.691+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='load_data_to_postgres_2021_22' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:34:57.308181+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:34:57.308181+00:00'
+[2025-04-06T16:26:31.692+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T16:26:31.692+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T16:26:31.692+0100] {logging_mixin.py:190} INFO - Current task name:load_data_to_postgres_2021_22 state:running start_date:2025-04-06 15:26:31.559659+00:00
+[2025-04-06T16:26:31.693+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T16:26:31.693+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T16:26:31.858+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 1, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:31.892+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 2, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:31.928+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 3, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:31.956+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.960+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.964+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.967+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.971+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.974+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.978+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.981+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.984+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.988+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.992+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:31.995+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.005+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.011+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.016+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.020+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.025+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.030+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.034+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.039+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.076+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 5, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.106+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 6, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.139+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 7, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.169+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 8, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.201+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 9, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.230+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.234+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.238+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.241+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.245+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.249+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.253+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.257+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.260+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.263+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.267+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.270+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.274+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.277+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.281+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.284+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.287+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.291+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.294+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.298+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.329+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 11, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.358+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 12, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.385+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.389+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.392+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.396+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.399+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.402+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.406+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.410+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.414+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.417+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.421+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.424+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.428+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.431+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.435+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.438+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.442+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.445+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.449+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.452+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.486+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 14, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.532+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.538+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.543+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.549+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.554+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.560+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.566+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.571+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.576+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.585+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.591+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.597+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.602+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.611+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.617+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.628+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.635+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.641+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.646+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.654+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.696+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 16, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.731+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.736+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.741+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.745+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.750+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.755+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.759+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.763+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.768+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.772+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.777+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.782+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.787+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.791+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.796+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.801+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.806+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.811+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.815+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.820+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.859+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 18, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:32.898+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.902+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.907+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.913+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.918+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.923+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.928+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.932+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.937+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.941+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.946+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.950+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.954+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.959+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.964+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.968+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.973+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.977+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.982+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:32.986+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.031+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 20, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.064+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 21, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.100+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.103+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.107+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.111+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.114+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.118+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.122+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.125+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.129+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.132+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.136+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.139+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.143+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.146+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.150+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.153+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.157+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.164+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.169+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.174+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.215+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 23, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.250+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.255+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.263+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.268+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.274+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.277+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.281+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.285+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.291+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.299+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.304+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.309+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.314+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.320+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.325+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.331+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.349+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.354+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.362+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.370+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.434+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.439+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.444+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.450+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.455+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.461+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.467+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.472+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.477+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.482+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.488+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.492+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.496+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.503+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.508+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.513+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.519+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.524+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.529+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.534+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.583+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 26, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.673+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.678+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.684+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.689+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.702+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.707+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.713+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.719+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.726+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.736+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.763+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.768+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.774+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.779+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.790+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.800+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.809+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.819+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.825+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.832+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.881+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 28, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.931+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 29, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:33.977+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.982+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.987+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.992+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:33.997+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.002+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.008+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.013+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.018+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.023+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.038+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.044+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.056+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.064+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.068+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.073+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.080+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.085+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.092+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.099+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.162+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.169+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.175+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.205+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.212+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.223+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.240+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.246+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.258+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.264+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.271+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.280+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.287+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.298+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.303+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.310+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.315+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.320+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.324+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.331+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.380+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.385+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.395+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.400+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.405+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.411+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.427+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.441+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.447+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.453+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.460+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.465+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.471+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.476+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.481+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.487+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.492+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.498+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.503+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.509+0100] {logging_mixin.py:190} INFO - Row inserted into 2021/22_premier_league_data.
+[2025-04-06T16:26:34.555+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 33, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.602+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 34, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.669+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 35, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.728+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 36, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.785+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 37, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.834+0100] {logging_mixin.py:190} INFO - Error occurred: (psycopg2.errors.NumericValueOutOfRange) bigint out of range
+
+[SQL: INSERT INTO "2021/22_premier_league_data" (position, club, abbreviation, played, won, drawn, lost, "GF", "GA", "GD", points, form, game_week, season) VALUES (%(position)s, %(club)s, %(abbreviation)s, %(played)s, %(won)s, %(drawn)s, %(lost)s, %(GF)s, %(GA)s, %(GD)s, %(points)s, %(form)s, %(game_week)s, %(season)s)]
+[parameters: {'position': nan, 'club': 'Manchester City', 'abbreviation': 'MCI', 'played': nan, 'won': nan, 'drawn': nan, 'lost': nan, 'GF': nan, 'GA': nan, 'GD': nan, 'points': nan, 'form': 'WWWWL', 'game_week': 38, 'season': '2021/22'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-04-06T16:26:34.835+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T16:26:34.842+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T16:26:34.843+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=load_data_to_postgres_2021_22, run_id=manual__2025-04-06T14:34:57.308181+00:00, execution_date=20250406T143457, start_date=20250406T152631, end_date=20250406T152634
+[2025-04-06T16:26:34.862+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T16:26:34.862+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T16:26:34.863+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 14:34:57.327913+00:00
+[2025-04-06T16:26:34.863+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T16:26:34.911+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T16:26:34.932+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T16:26:34.933+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

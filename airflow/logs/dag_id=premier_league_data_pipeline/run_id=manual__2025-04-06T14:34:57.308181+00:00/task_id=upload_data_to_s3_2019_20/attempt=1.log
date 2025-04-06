@@ -1,0 +1,102 @@
+[2025-04-06T16:21:01.837+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T16:21:01.855+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_data_pipeline.upload_data_to_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:21:01.865+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_data_pipeline.upload_data_to_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [queued]>
+[2025-04-06T16:21:01.865+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-06T16:21:01.882+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): upload_data_to_s3_2019_20> on 2025-04-06 14:34:57.308181+00:00
+[2025-04-06T16:21:01.887+0100] {standard_task_runner.py:72} INFO - Started process 44969 to run task
+[2025-04-06T16:21:01.890+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_data_pipeline', 'upload_data_to_s3_2019_20', 'manual__2025-04-06T14:34:57.308181+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_dag.py', '--cfg-path', '/tmp/tmp5lb1tks6']
+[2025-04-06T16:21:01.891+0100] {standard_task_runner.py:105} INFO - Job 32: Subtask upload_data_to_s3_2019_20
+[2025-04-06T16:21:01.930+0100] {task_command.py:467} INFO - Running <TaskInstance: premier_league_data_pipeline.upload_data_to_s3_2019_20 manual__2025-04-06T14:34:57.308181+00:00 [running]> on host dell-Latitude-5480
+[2025-04-06T16:21:02.007+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Victory' AIRFLOW_CTX_DAG_ID='premier_league_data_pipeline' AIRFLOW_CTX_TASK_ID='upload_data_to_s3_2019_20' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:34:57.308181+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:34:57.308181+00:00'
+[2025-04-06T16:21:02.008+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-06T16:21:02.008+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-06T16:21:02.009+0100] {logging_mixin.py:190} INFO - Current task name:upload_data_to_s3_2019_20 state:running start_date:2025-04-06 15:21:01.855470+00:00
+[2025-04-06T16:21:02.009+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline and current dag run status:running
+[2025-04-06T16:21:02.009+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-06T16:21:02.156+0100] {credentials.py:1352} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-04-06T16:21:08.732+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW1_data.csv
+[2025-04-06T16:21:08.733+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW1_data.csv
+[2025-04-06T16:21:09.249+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW2_data.csv
+[2025-04-06T16:21:09.250+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW2_data.csv
+[2025-04-06T16:21:09.859+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW3_data.csv
+[2025-04-06T16:21:09.860+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW3_data.csv
+[2025-04-06T16:21:10.472+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW4_data.csv
+[2025-04-06T16:21:10.473+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW4_data.csv
+[2025-04-06T16:21:11.087+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW5_data.csv
+[2025-04-06T16:21:11.087+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW5_data.csv
+[2025-04-06T16:21:11.701+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW6_data.csv
+[2025-04-06T16:21:11.702+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW6_data.csv
+[2025-04-06T16:21:12.315+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW7_data.csv
+[2025-04-06T16:21:12.316+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW7_data.csv
+[2025-04-06T16:21:12.930+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW8_data.csv
+[2025-04-06T16:21:12.930+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW8_data.csv
+[2025-04-06T16:21:13.544+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW9_data.csv
+[2025-04-06T16:21:13.545+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW9_data.csv
+[2025-04-06T16:21:14.159+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW10_data.csv
+[2025-04-06T16:21:14.159+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW10_data.csv
+[2025-04-06T16:21:14.773+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW11_data.csv
+[2025-04-06T16:21:14.773+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW11_data.csv
+[2025-04-06T16:21:15.316+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW12_data.csv
+[2025-04-06T16:21:15.316+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW12_data.csv
+[2025-04-06T16:21:15.797+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW13_data.csv
+[2025-04-06T16:21:15.797+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW13_data.csv
+[2025-04-06T16:21:16.412+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW14_data.csv
+[2025-04-06T16:21:16.412+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW14_data.csv
+[2025-04-06T16:21:17.026+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW15_data.csv
+[2025-04-06T16:21:17.027+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW15_data.csv
+[2025-04-06T16:21:17.640+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW16_data.csv
+[2025-04-06T16:21:17.641+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW16_data.csv
+[2025-04-06T16:21:18.255+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW17_data.csv
+[2025-04-06T16:21:18.255+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW17_data.csv
+[2025-04-06T16:21:18.869+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW18_data.csv
+[2025-04-06T16:21:18.870+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW18_data.csv
+[2025-04-06T16:21:19.484+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW19_data.csv
+[2025-04-06T16:21:19.484+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW19_data.csv
+[2025-04-06T16:21:20.098+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW20_data.csv
+[2025-04-06T16:21:20.098+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW20_data.csv
+[2025-04-06T16:21:20.712+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW21_data.csv
+[2025-04-06T16:21:20.713+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW21_data.csv
+[2025-04-06T16:21:21.327+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW22_data.csv
+[2025-04-06T16:21:21.327+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW22_data.csv
+[2025-04-06T16:21:21.941+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW23_data.csv
+[2025-04-06T16:21:21.942+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW23_data.csv
+[2025-04-06T16:21:22.556+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW24_data.csv
+[2025-04-06T16:21:22.556+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW24_data.csv
+[2025-04-06T16:21:23.170+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW25_data.csv
+[2025-04-06T16:21:23.171+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW25_data.csv
+[2025-04-06T16:21:23.785+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW26_data.csv
+[2025-04-06T16:21:23.786+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW26_data.csv
+[2025-04-06T16:21:24.399+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW27_data.csv
+[2025-04-06T16:21:24.399+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW27_data.csv
+[2025-04-06T16:21:24.944+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW28_data.csv
+[2025-04-06T16:21:24.944+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW28_data.csv
+[2025-04-06T16:21:25.525+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW29_data.csv
+[2025-04-06T16:21:25.526+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW29_data.csv
+[2025-04-06T16:21:26.140+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW30_data.csv
+[2025-04-06T16:21:26.140+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW30_data.csv
+[2025-04-06T16:21:26.754+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW31_data.csv
+[2025-04-06T16:21:26.754+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW31_data.csv
+[2025-04-06T16:21:27.368+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW32_data.csv
+[2025-04-06T16:21:27.369+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW32_data.csv
+[2025-04-06T16:21:27.983+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW33_data.csv
+[2025-04-06T16:21:27.983+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW33_data.csv
+[2025-04-06T16:21:28.597+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW34_data.csv
+[2025-04-06T16:21:28.597+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW34_data.csv
+[2025-04-06T16:21:29.212+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW35_data.csv
+[2025-04-06T16:21:29.212+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW35_data.csv
+[2025-04-06T16:21:29.826+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW36_data.csv
+[2025-04-06T16:21:29.826+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW36_data.csv
+[2025-04-06T16:21:30.440+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW37_data.csv
+[2025-04-06T16:21:30.441+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW37_data.csv
+[2025-04-06T16:21:31.055+0100] {logging_mixin.py:190} INFO - Uploaded to s3://premier-league-football-data-bucket/2019_20_GW38_data.csv
+[2025-04-06T16:21:31.055+0100] {logging_mixin.py:190} INFO - Deleted local file: ../data/2019_20_GW38_data.csv
+[2025-04-06T16:21:31.057+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-06T16:21:31.065+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-06T16:21:31.065+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=premier_league_data_pipeline, task_id=upload_data_to_s3_2019_20, run_id=manual__2025-04-06T14:34:57.308181+00:00, execution_date=20250406T143457, start_date=20250406T152101, end_date=20250406T152131
+[2025-04-06T16:21:31.085+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-06T16:21:31.086+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-06T16:21:31.086+0100] {logging_mixin.py:190} INFO - Dag name:premier_league_data_pipeline queued_at:2025-04-06 14:34:57.327913+00:00
+[2025-04-06T16:21:31.086+0100] {logging_mixin.py:190} INFO - Task hostname:dell-Latitude-5480 operator:PythonOperator
+[2025-04-06T16:21:31.102+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-06T16:21:31.129+0100] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T16:21:31.132+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

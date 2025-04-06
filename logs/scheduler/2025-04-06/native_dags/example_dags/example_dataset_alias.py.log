@@ -1,0 +1,42 @@
+[2025-04-06T13:12:28.743+0100] {processor.py:186} INFO - Started process (PID=12510) to work on /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-04-06T13:12:28.748+0100] {processor.py:914} INFO - Processing file /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-04-06T13:12:28.766+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:28.765+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-04-06T13:12:28.864+0100] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer' retrieved from /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-04-06T13:12:29.047+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.046+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.067+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.067+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.082+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.082+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.111+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.110+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.124+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.123+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.147+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.146+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.166+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.165+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_s3_bucket_producer
+[2025-04-06T13:12:29.201+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.201+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.222+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.222+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.236+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.236+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.261+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.260+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.281+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.280+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.300+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.300+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.320+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.320+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.348+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.347+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.367+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.366+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.391+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.390+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.408+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.407+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.431+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.430+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.445+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.444+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.464+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.464+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.497+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.497+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.515+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.514+0100] {override.py:1912} INFO - Created Permission View: can read on DAG:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.535+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.534+0100] {override.py:1912} INFO - Created Permission View: can edit on DAG:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.557+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.557+0100] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.578+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.577+0100] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.595+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.594+0100] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.615+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.614+0100] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.615+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.615+0100] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-04-06T13:12:29.649+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.649+0100] {dag.py:3262} INFO - Creating ORM DAG for dataset_alias_example_alias_producer
+[2025-04-06T13:12:29.650+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.650+0100] {dag.py:3262} INFO - Creating ORM DAG for dataset_alias_example_alias_consumer
+[2025-04-06T13:12:29.651+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.651+0100] {dag.py:3262} INFO - Creating ORM DAG for dataset_s3_bucket_producer
+[2025-04-06T13:12:29.652+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.652+0100] {dag.py:3262} INFO - Creating ORM DAG for dataset_s3_bucket_consumer
+[2025-04-06T13:12:29.676+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.675+0100] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-04-06T13:12:29.677+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.676+0100] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-04-06T13:12:29.678+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.677+0100] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-04-06T13:12:29.679+0100] {logging_mixin.py:190} INFO - [2025-04-06T13:12:29.678+0100] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-04-06T13:12:29.718+0100] {processor.py:208} INFO - Processing /home/Data_Professional/PycharmProjects/DE_Zoomcamp_Capstone_Project/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dataset_alias.py took 1.002 seconds
