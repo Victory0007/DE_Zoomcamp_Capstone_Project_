@@ -67,9 +67,3 @@ This pipeline collects and processes Premier League data (2019–2023 season) by
 1. **Scraping**: Airflow runs scraper to fetch data and store it in S3.
 2. **Data Ingestion**: Data is loaded into PostgreSQL for cleaning and transformation.
 3. **Data Visualization**: Tableau connects to PostgreSQL and generates visual reports.
-
----
-
-## Conclusion
-
-This pipeline demonstrates the full process of collecting, processing, and visualizing Premier League data using modern data engineering tools. The use of S3, PostgreSQL, Airflow, and Tableau provides a scalable and efficient solution.
